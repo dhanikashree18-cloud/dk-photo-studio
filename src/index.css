@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* Tailwind CSS v4 Theme Extensions */
+@theme {
+  --color-studio-black: #09090b; /* Deep rich obsidian */
+  --color-studio-dark: #121214;  /* Soft slate black */
+  --color-studio-card: #18181b;  /* Cards background matching dark theme */
+  --color-studio-gold: #dfba6b;  /* Elegant champagne gold */
+  --color-studio-gold-light: #f0d59e;
+  --color-studio-gold-dark: #ca9f4a;
+  --color-studio-gold-hover: #ffd98c;
+  --color-studio-border: #27272a;
+  --color-studio-border-gold: #3a3222;
+
+  --font-cinzel: "Cinzel", "serif";
+  --font-serif: "Playfair Display", "serif";
+  --font-sans: "Plus Jakarta Sans", "Inter", "sans-serif";
+
+  --letter-spacing-widest: 0.25em;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-studio-black);
+    color: #d1d5db; /* text-gray-300 */
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  /* Premium Gold Text Gradient */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #ffd98c 0%, #dfba6b 50%, #bca05b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Soft Velvet Backdrop for Cards */
+  .bg-velvet-card {
+    background-color: var(--color-studio-dark);
+    border: 1px solid rgba(223, 186, 107, 0.08);
+  }
+
+  .bg-velvet-card-hover:hover {
+    border-color: rgba(223, 186, 107, 0.3);
+    box-shadow: 0 10px 30px -15px rgba(223, 186, 107, 0.1);
+  }
+
+  /* Custom Dotted Gold Border as seen in Reference Images */
+  .border-dotted-gold {
+    border-style: dotted;
+    border-color: rgba(223, 186, 107, 0.3);
+  }
+
+  /* Custom Glow effect */
+  .glow-gold {
+    box-shadow: 0 0 25px rgba(223, 186, 107, 0.15);
+  }
+
+  .glow-gold-hover:hover {
+    box-shadow: 0 0 35px rgba(223, 186, 107, 0.25);
+  }
+}
+
+/* Custom scroll behaviour and glassmorphism elements */
+.glassmorphism {
+  background: rgba(9, 9, 11, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glassmorphism-light {
+  background: rgba(24, 24, 27, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Grid animations */
+.gallery-grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-grid-item img {
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.gallery-grid-item:hover img {
+  transform: scale(1.08);
+}
