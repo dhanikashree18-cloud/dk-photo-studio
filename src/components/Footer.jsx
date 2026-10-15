@@ -23,13 +23,20 @@ export default function Footer() {
             INSTAGRAM
           </a>
           <a 
-            href="http://localhost:5173/" 
+            href="/gallery" 
             target="_blank" 
             rel="noreferrer" 
             className="text-gray-400 hover:text-studio-gold underline underline-offset-4 decoration-studio-gold/45 hover:decoration-studio-gold transition-colors"
           >
-            PORTFOLIO
           </a>
+           <a 
+            href="https://portfolio-mu-five-ovu5ei80zv.vercel.app/" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="text-gray-400 hover:text-studio-gold underline underline-offset-4 decoration-studio-gold/45 hover:decoration-studio-gold transition-colors"
+          >
+          </a>
+          PORTFOLIO
           <Link 
             to="/contact" 
             className="text-gray-400 hover:text-studio-gold underline underline-offset-4 decoration-studio-gold/45 hover:decoration-studio-gold transition-colors"
