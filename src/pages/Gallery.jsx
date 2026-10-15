@@ -36,40 +36,40 @@ const galleryItems = [
     description: 'A touching moment as the groom kisses the bride during the ceremony, surrounded by blessings and family.',
   },
 
-  // Pre-Wedding / Post-Wedding Shoots
+  // Post-Wedding Shoots
   {
     id: 4,
     src: '/postwedding_1.jpg',
     title: 'The Crimson Grace',
-    category: 'Pre-Wedding Shoots',
+    category: 'Post-Wedding Shoots',
     description: 'An intimate portrait of a couple in traditional attire, with the bride in a rich red saree leaning gently against the groom.',
   },
   {
     id: 5,
     src: '/postwedding_2.jpg',
     title: 'Gilded Whispers',
-    category: 'Pre-Wedding Shoots',
+    category: 'Post-Wedding Shoots',
     description: 'A radiant closeup of a couple embracing lovingly in golden-cream outfits, showing rich traditional details and henna designs.',
   },
   {
     id: 6,
     src: '/postwedding_3.jpg',
     title: 'Traditional Devotion',
-    category: 'Pre-Wedding Shoots',
+    category: 'Post-Wedding Shoots',
     description: 'A romantic moment framed as the groom holds the bride\'s chin gently in a warm outdoor traditional session.',
   },
   {
     id: 61,
     src: '/postwedding_4.jpg',
     title: 'Golden Hour Park',
-    category: 'Pre-Wedding Shoots',
+    category: 'Post-Wedding Shoots',
     description: 'A bright, lively three-panel collage capturing a modern couple sharing sweet moments and poses in an autumn-lit park.',
   },
   {
     id: 62,
     src: '/postwedding_5.jpg',
     title: 'Royal Vows',
-    category: 'Pre-Wedding Shoots',
+    category: 'Post-Wedding Shoots',
     description: 'An elegant portrait of a couple in formal wedding attire, with the bride in a red silk saree embracing the groom in a black bandhgala.',
   },
 
@@ -174,7 +174,7 @@ const galleryItems = [
 const categories = [
   'All',
   'Wedding Photography',
-  'Pre-Wedding Shoots',
+  'Post-Wedding Shoots',
   'Baby Shoots',
   'Fashion Photography',
   'Event Coverage'
